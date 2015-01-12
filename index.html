@@ -7,7 +7,8 @@
 
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
 
-  <script src="../components/webcomponentsjs/webcomponents.js"></script>
+  <script src="../components/webcomponentsjs/webcomponents.js">
+  </script>
   
   <link rel="stylesheet" href="palette.css" type="text/css" />
 
@@ -15,6 +16,9 @@
   <link rel="import" href="../components/core-header-panel/core-header-panel.html">
   <link rel="import" href="../components/core-toolbar/core-toolbar.html">
   <link rel="import" href="../components/paper-tabs/paper-tabs.html">
+  <link rel="import" href="../components/core-icon-button/core-icon-button.html">
+  <link rel="import" href="../components/core-icons/core-icons.html">
+
 
   <style>
     html,body {
@@ -46,6 +50,7 @@
       margin: 50px auto;
     }
     
+
     
     @media (min-width: 481px) {
       #tabs {
@@ -65,12 +70,14 @@
     <core-toolbar>
       <core-icon-button icon="menu"></core-icon-button>
       
-      <div>XJ-9900-001</div>
-      
-      <core-icon class="icon-larger" icon="adndroid"></core-icon>
+      <div>XJ-99-0001</div>
+      <core-icon icon="android"></core-icon>
       
     </core-toolbar>
-    <div class="content"></div>
+    <div class="content">
+      
+       
+    </div>
 
     <!--
     <paper-tabs id="tabs" selected="all" self-end>
@@ -85,13 +92,11 @@
   </core-header-panel>
 
   <script>
-    /*
-    var tabs = document.querySelector('paper-tabs');
-    var list = document.querySelector('post-list');
-    tabs.addEventListener('core-select', function() {
-      //list.show = tabs.selected;
-    });
-    */
+  var tabs = document.querySelector('paper-tabs');
+  var list = document.querySelector('post-list');
+  tabs.addEventListener('core-select', function() {
+    //list.show = tabs.selected;
+  });
   </script>
 
 </body>
